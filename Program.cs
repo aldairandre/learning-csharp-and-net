@@ -1,9 +1,6 @@
-﻿string sayHello = "Hello World";
-Console.WriteLine($"{sayHello}");
+﻿string songLyrics = "Don't let that broke bicth in 'cause she too messy";
+Console.WriteLine($"Lyrics:\n--{songLyrics}");
 
-sayHello = sayHello.Replace("Hello","Greeting");
-Console.WriteLine(sayHello);
 Console.WriteLine("");
-Console.WriteLine("=== Upper and Lower ===");
-Console.WriteLine(sayHello.ToUpper());
-Console.WriteLine(sayHello.ToLower());
+Console.WriteLine($"This Lyrics contains? Don't: {songLyrics.Contains("Don't")}");
+Console.WriteLine($"This Lyrics contains? Rice: {songLyrics.Contains("Rice")}");
