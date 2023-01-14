@@ -1,16 +1,13 @@
-﻿double height;
-string name;
-
-Console.WriteLine("");
-Console.WriteLine("======== CADAST FORM ========");
+﻿Console.WriteLine("");
+Console.WriteLine("======== What is your age? ========");
 Console.WriteLine("");
 Console.Write("What is your name: ");
-name = Console.ReadLine();
+string name = Console.ReadLine();
 Console.WriteLine("");
-Console.Write("What is your Height: ");
-height = double.Parse(Console.ReadLine());
+Console.Write("What's year were you born: ");
+int year = int.Parse(Console.ReadLine());
+int age = 2023 - year;
 Console.Clear();
-Console.WriteLine("======== DATAS ========");
 Console.WriteLine("");
-Console.WriteLine($"Name: {name}");
-Console.WriteLine($"Height: {height}");
+Console.WriteLine($"Hellow {name}, your are {age}");
+Console.WriteLine("");
