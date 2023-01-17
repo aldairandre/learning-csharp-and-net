@@ -1,13 +1,6 @@
-﻿Console.WriteLine("");
-Console.WriteLine("======== What is your age? ========");
+﻿string songLyrics = "Don't let that broke bicth in 'cause she too messy";
+Console.WriteLine($"Lyrics:\n--{songLyrics}");
+
 Console.WriteLine("");
-Console.Write("What is your name: ");
-string name = Console.ReadLine();
-Console.WriteLine("");
-Console.Write("What's year were you born: ");
-int year = int.Parse(Console.ReadLine());
-int age = 2023 - year;
-Console.Clear();
-Console.WriteLine("");
-Console.WriteLine($"Hellow {name}, your are {age}");
-Console.WriteLine("");
+Console.WriteLine($"This Lyrics contains? Don't: {songLyrics.Contains("Don't")}");
+Console.WriteLine($"This Lyrics contains? Rice: {songLyrics.Contains("Rice")}");
