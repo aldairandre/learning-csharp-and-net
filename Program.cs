@@ -1,8 +1,7 @@
-﻿string name = "Aldair"; 
-int age = 23;
-double height;
-height = 1.77;
-
+﻿const string name = "Aldair"; 
+int age;
+const double height = 1.77;
+age = 23;
 Console.Write($"Name: {name}");
 Console.WriteLine("");
 Console.Write($"Age: {age}");
