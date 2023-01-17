@@ -1,13 +1,11 @@
-﻿Console.WriteLine("");
-Console.WriteLine("======== What is your age? ========");
+﻿string name = "Aldair"; 
+int age = 23;
+double height;
+height = 1.77;
+
+Console.Write($"Name: {name}");
 Console.WriteLine("");
-Console.Write("What is your name: ");
-string name = Console.ReadLine();
+Console.Write($"Age: {age}");
 Console.WriteLine("");
-Console.Write("What's year were you born: ");
-int year = int.Parse(Console.ReadLine());
-int age = 2023 - year;
-Console.Clear();
-Console.WriteLine("");
-Console.WriteLine($"Hellow {name}, your are {age}");
+Console.Write($"Height: {height}cm");
 Console.WriteLine("");
