@@ -1,13 +1,28 @@
-﻿Console.WriteLine("");
-Console.WriteLine("======== What is your age? ========");
-Console.WriteLine("");
-Console.Write("What is your name: ");
-string name = Console.ReadLine();
-Console.WriteLine("");
-Console.Write("What's year were you born: ");
-int year = int.Parse(Console.ReadLine());
-int age = 2023 - year;
-Console.Clear();
-Console.WriteLine("");
-Console.WriteLine($"Hellow {name}, your are {age}");
-Console.WriteLine("");
+﻿int day = 4;
+switch (day) 
+{
+  case 1:
+    Console.WriteLine("Monday");
+    break;
+  case 2:
+    Console.WriteLine("Tuesday");
+    break;
+  case 3:
+    Console.WriteLine("Wednesday");
+    break;
+  case 4:
+    Console.WriteLine("Thursday");
+    break;
+  case 5:
+    Console.WriteLine("Friday");
+    break;
+  case 6:
+    Console.WriteLine("Saturday");
+    break;
+  case 7:
+    Console.WriteLine("Sunday");
+    break;
+  default:
+    Console.WriteLine("Looking forward to the Weekend.");
+    break;
+}
