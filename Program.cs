@@ -1,13 +1,10 @@
-﻿Console.WriteLine("");
-Console.WriteLine("======== What is your age? ========");
-Console.WriteLine("");
-Console.Write("What is your name: ");
-string name = Console.ReadLine();
-Console.WriteLine("");
-Console.Write("What's year were you born: ");
-int year = int.Parse(Console.ReadLine());
-int age = 2023 - year;
-Console.Clear();
-Console.WriteLine("");
-Console.WriteLine($"Hellow {name}, your are {age}");
-Console.WriteLine("");
+﻿/*
+  The foreach Loop
+    There is also a foreach loop, which is used exclusively to loop through elements in an array:
+*/
+
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+foreach (string i in cars) 
+{
+  Console.WriteLine(i);
+}
