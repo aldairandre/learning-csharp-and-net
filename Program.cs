@@ -1,3 +1,9 @@
-﻿if (20 > 18) {
-  Console.WriteLine("20 is greater than 18");
+﻿int time = 20;
+if (time < 18) 
+{
+  Console.WriteLine("Good day.");
+} 
+else 
+{
+  Console.WriteLine("Good evening.");
 }
