@@ -1,14 +1,14 @@
 ﻿/*
-  C# Continue
-    The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
-
-    This example skips the value of 4:
+  Break and Continue in While Loop
+    You can also use break and continue in while loops:
 */
-for (int i = 0; i < 10; i++) 
+int i = 0;
+while (i < 10) 
 {
+  Console.WriteLine(i);
+  i++;
   if (i == 4) 
   {
-    continue;
+    break;
   }
-  Console.WriteLine(i);
 }
