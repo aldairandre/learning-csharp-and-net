@@ -1,13 +1,12 @@
-﻿Console.WriteLine("");
-Console.WriteLine("======== What is your age? ========");
-Console.WriteLine("");
-Console.Write("What is your name: ");
-string name = Console.ReadLine();
-Console.WriteLine("");
-Console.Write("What's year were you born: ");
-int year = int.Parse(Console.ReadLine());
-int age = 2023 - year;
-Console.Clear();
-Console.WriteLine("");
-Console.WriteLine($"Hellow {name}, your are {age}");
-Console.WriteLine("");
+﻿/*
+  The Do/While Loop
+    The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+*/
+
+int i = 0;
+do 
+{
+  Console.WriteLine(i);
+  i++;
+}
+while (i < 5);
