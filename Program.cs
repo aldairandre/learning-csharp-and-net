@@ -1,9 +1,10 @@
 ﻿/*
-  C# For Loop
-    When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+  The foreach Loop
+    There is also a foreach loop, which is used exclusively to loop through elements in an array:
 */
 
-for (int i = 0; i < 5; i++) 
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+foreach (string i in cars) 
 {
   Console.WriteLine(i);
 }
