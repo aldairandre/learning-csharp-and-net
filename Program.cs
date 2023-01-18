@@ -5,10 +5,11 @@
 int i = 0;
 while (i < 10) 
 {
-  Console.WriteLine(i);
-  i++;
   if (i == 4) 
   {
-    break;
+    i++;
+    continue;
   }
+  Console.WriteLine(i);
+  i++;
 }
