@@ -1,17 +1,17 @@
-﻿// System.Linq
+﻿// Multidimensional Arrays
+/*
+  Two-Dimensional Arrays
+    To create a 2D array, add each array within its own set of curly braces, and insert a comma (,) inside the square brackets:
+*/
 using System.Linq;
-
-
-int [] myNum = {20,10,30 ,60, 40};
+int[,] numbers = { {1,4,2},{3,6,8} };
 Console.WriteLine();
-Console.Write("Array -> [ ");
-Array.Sort(myNum);
-foreach(int num in myNum){
+Console.Write("Multidimensional Array -> [");
+foreach(int num in numbers){
   Console.Write($"{num} ");
 }
 Console.Write("]");
 Console.WriteLine();
-Console.WriteLine($"Max value in array : {myNum.Max()}"); // returns the largest value
-Console.WriteLine($"Min value in array : {myNum.Min()}"); // returns the smallest value
-Console.WriteLine($"Sum : {myNum.Sum()}");               // returns the sum of elements
+numbers[0,1] = 10;
+Console.WriteLine($"{numbers[0,1]}");
 Console.WriteLine();
