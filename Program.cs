@@ -1,13 +1,17 @@
-﻿Console.WriteLine("");
-Console.WriteLine("======== What is your age? ========");
-Console.WriteLine("");
-Console.Write("What is your name: ");
-string name = Console.ReadLine();
-Console.WriteLine("");
-Console.Write("What's year were you born: ");
-int year = int.Parse(Console.ReadLine());
-int age = 2023 - year;
-Console.Clear();
-Console.WriteLine("");
-Console.WriteLine($"Hellow {name}, your are {age}");
-Console.WriteLine("");
+﻿// System.Linq
+using System.Linq;
+
+
+int [] myNum = {20,10,30 ,60, 40};
+Console.WriteLine();
+Console.Write("Array -> [ ");
+Array.Sort(myNum);
+foreach(int num in myNum){
+  Console.Write($"{num} ");
+}
+Console.Write("]");
+Console.WriteLine();
+Console.WriteLine($"Max value in array : {myNum.Max()}"); // returns the largest value
+Console.WriteLine($"Min value in array : {myNum.Min()}"); // returns the smallest value
+Console.WriteLine($"Sum : {myNum.Sum()}");               // returns the sum of elements
+Console.WriteLine();
