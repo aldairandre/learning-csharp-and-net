@@ -1,9 +1,9 @@
 ﻿// Sort an Array
 // There are many array methods available, for example Sort(), which sorts an array alphabetically or in an ascending order:
 
-string [] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+int [] myNum = {20,10,30 ,60, 40};
 
-Array.Sort(cars);
-foreach(string car in cars){
+Array.Sort(myNum);
+foreach(int car in myNum){
   Console.WriteLine(car);
 }
