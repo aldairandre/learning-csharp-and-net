@@ -1,6 +1,6 @@
 class Car {
-public string color;
-  public void ChangeColor(){
-    color = "brown";
-  }
+  public string model;
+  public string color;
+  public int year;
+  
 }
