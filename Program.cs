@@ -1,13 +1,25 @@
-﻿Console.WriteLine("");
-Console.WriteLine("======== What is your age? ========");
-Console.WriteLine("");
-Console.Write("What is your name: ");
-string name = Console.ReadLine();
-Console.WriteLine("");
-Console.Write("What's year were you born: ");
-int year = int.Parse(Console.ReadLine());
-int age = 2023 - year;
-Console.Clear();
-Console.WriteLine("");
-Console.WriteLine($"Hellow {name}, your are {age}");
-Console.WriteLine("");
+﻿namespace Test 
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      
+      Car ford = new Car();
+      ford.model = "Mustabg";
+      ford.color = "Yellow";
+      ford.year = 1969;
+
+      Car opel = new Car();
+      opel.model = "Astra";
+      opel.color = "Black";
+      opel.year = 2005;
+
+      Console.WriteLine();
+      Console.WriteLine("=== CARS IN DB ===");
+      Console.WriteLine(ford.color);
+      Console.WriteLine(opel.color);
+      Console.WriteLine();
+    }
+  }
+}
