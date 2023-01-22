@@ -1,19 +1,21 @@
 ﻿namespace Test 
 {
+  class Person {
+    private string name;
+    public string Name   
+    {
+      get { return name; }
+      set { name = value; }
+    }
+  }
   class Program
   {
     static void Main(string[] args)
     {
-      
-      Car ford = new Car("Mustang","Yellow",1969);
 
-      Car opel = new Car("Astra","Black",2005);
-
-      Console.WriteLine();
-      Console.WriteLine("=== CARS IN DB ===");
-      Console.WriteLine(ford.model);
-      Console.WriteLine(opel.model);
-      Console.WriteLine();
+     Person myObj = new Person();
+     myObj.Name = "Aldair";
+     Console.WriteLine(myObj.Name);
     }
   }
 }
